@@ -32,15 +32,19 @@ namespace ASPNETCoreAngular7
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (!env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
+                //app.UseDeveloperExceptionPage();
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
+            //else
+            //{
+            //    //app.UseExceptionHandler("/Error");
+            //    //app.UseHsts();
+            //    //app.UseDeveloperExceptionPage();
+            //    //app.UseExceptionHandler("/Home/Error");
+            //}
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -60,10 +64,10 @@ namespace ASPNETCoreAngular7
 
                 spa.Options.SourcePath = "ClientApp";
 
-                if (env.IsDevelopment())
-                {
-                    spa.UseAngularCliServer(npmScript: "start");
-                }
+                //if (env.IsDevelopment())
+                //{
+                //    spa.UseAngularCliServer(npmScript: "start");
+                //}
             });
         }
     }
