@@ -22,7 +22,7 @@ namespace ASPNETCoreAngular7
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            //In production, the Angular files will be served from this directory
+            // In production, the Angular files will be served from this directory
             //services.AddSpaStaticFiles(configuration =>
             //{
             //    configuration.RootPath = "ClientApp/dist";
