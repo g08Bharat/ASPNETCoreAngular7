@@ -8,7 +8,7 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Welcome to Shanu Angular 7 Web page'; 
+  title = 'Welcome to Angular 7 Web page'; 
   datetime = Date.now();
 
   incrementValue: number[] = [];
