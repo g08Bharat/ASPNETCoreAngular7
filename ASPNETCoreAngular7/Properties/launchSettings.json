@@ -22,6 +22,14 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Azure": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "https://starterwebapp.azurewebsites.net/",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
     }
   }
 }
