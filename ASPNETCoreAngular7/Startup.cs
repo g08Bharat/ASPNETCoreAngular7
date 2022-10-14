@@ -50,7 +50,6 @@ namespace ASPNETCoreAngular7
             //{
             //    app.UseExceptionHandler("/Error");
             //}
-            
             app.UseDeveloperExceptionPage();
             app.UseMigrationsEndPoint();
 
